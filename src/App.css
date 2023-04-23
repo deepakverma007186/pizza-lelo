@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.animate-bounce-10s {
+  animation: bounce 10s infinite;
+}
+
+.pizza-btn {
+  @apply text-[1.5rem] font-bold rounded-md px-1 py-2 leading-none outline mt-6 hover:bg-[#FFD384] hover:text-white duration-500;
+}
